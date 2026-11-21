@@ -1,0 +1,27 @@
+name: Task
+description: A specific piece of work, such as refactoring, build changes, documentation or tech debt.
+title: "chore(<scope>): "
+type: Task
+projects: ["VirtuoTopia/1"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context / Problem
+      description: What needs to be done, and why.
+    validations:
+      required: true
+  - type: textarea
+    id: components
+    attributes:
+      label: Affected Java components
+      description: Fully qualified class names, packages or file paths.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Concrete, checkable outcomes.
+      value: |
+        - [ ] 
+    validations:
+      required: true

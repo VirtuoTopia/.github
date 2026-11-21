@@ -1,0 +1,34 @@
+name: Feature
+description: New functionality. Larger features can be split into sub-issues, also in other repositories.
+title: "feat(<scope>): "
+type: Feature
+projects: ["VirtuoTopia/1"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context / Problem
+      description: What is needed, and why.
+    validations:
+      required: true
+  - type: textarea
+    id: components
+    attributes:
+      label: Affected Java components
+      description: Fully qualified class names, packages or file paths.
+      placeholder: org.virtuotopia.* in src/main/java/org/virtuotopia/*
+  - type: textarea
+    id: details
+    attributes:
+      label: Technical details
+      description: Design notes, API contract changes, links to decision records or related issues in other repositories.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Concrete, checkable outcomes.
+      value: |
+        - [ ] 
+        - [ ] Tests cover the new behavior
+    validations:
+      required: true
