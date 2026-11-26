@@ -1,6 +1,6 @@
 name: Bug
 description: Something behaves differently than expected.
-title: "bug(<scope>): "
+title: "fix(<scope>): "
 type: Bug
 projects: ["VirtuoTopia/1"]
 body:
